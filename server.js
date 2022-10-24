@@ -33,7 +33,7 @@ const { authenticateToken, isAdmin } = require("./src/middlewares/auth");
 
 app.set("view-engine","ejs")
 
-app.use(reqInfo)
+app.use(info)
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.json())

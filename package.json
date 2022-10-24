@@ -1,7 +1,7 @@
 {
   "name": "proyecto-final-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto final ch",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
