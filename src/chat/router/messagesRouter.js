@@ -1,7 +1,7 @@
 const express = require("express");
 const chatRouter = express.Router();
 
-const MessagesService = require ("../service/MessagesService")
+const MessagesService = require ("../service/messagesService")
 const service = new MessagesService(process.env.DATA_BASE_MESSAGES)
 
 chatRouter.use(express.json())
