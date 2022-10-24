@@ -23,4 +23,4 @@ const graphMiddleware = graphqlHTTP({
 const graphqlCartsRouter = Router();
 graphqlCartsRouter.use("/graphql/carts", authenticateToken , graphMiddleware)
 
-module.exports = graphqlCartsRouter
+module.exports = graphqlCartsRouter;
