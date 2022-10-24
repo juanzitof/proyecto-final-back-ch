@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="navBar">
+    <div >
       <h1>Detalles del carrito</h1>
       <a href="/logout"> Logout </a>
     </div>
@@ -19,15 +19,15 @@
       <h2>Tu carrito esta vacio!</h2>
     <% } else { %>
       <h2> Products in your cart:</h2>
-      <div class="productsContainer">
-        <div class="productContainer">
+      <div class="products-Container">
+        <div class="product-Container">
           <div>Product Name</div>
           <div>Price</div>
           <div>Quantity</div>
           <div>Imagen</div>
         </div>
         <% for(let i = 0; i < cart.products.length; i++) { %>
-          <div class="productContainer">
+          <div class="product-Container">
             <div><%=cart.products[i].title %></div>
             <div><%=cart.products[i].price %></div>
             <div><%=cart.products[i].quantity %></div>
@@ -39,7 +39,7 @@
       <h3>Total:  <%=cart.total%></h3>
 
       <form action="/orders" method="post">
-        <button type="submit" class="btnSubmit"> Compra completa</button>
+        <button type="submit" class="btn-Submit"> Compra completa</button>
       </form>
 
       <div class="links">

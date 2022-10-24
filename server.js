@@ -71,6 +71,6 @@ if ( process.env.MODE == "cluster") {
   }
 } else {
   server.listen(PORT, () => {
-      console.log(`Server listening on port ${server.address().port}`);
+      console.log(`Servidor escuchando en el puerto ${server.address().port}`);
   })
 }

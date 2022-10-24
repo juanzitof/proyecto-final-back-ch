@@ -14,34 +14,34 @@
       <h1> Lista de mensajes de <%= email %> </h1>
       <a href="/logout"> Salir </a>
     </div>
-    <ul id="messagesContainer">
+    <ul id="messages-Container">
       <% messages.map( (message) => { %>
         <% if (message.type === "user") { %>
-          <li class="messageContainer">
+          <li class="message-Container">
             <div class="message">
-              <div class="green"><%=message.email%> :</div> <div> <%=message.message%> </div>
+              <div class="color"><%=message.email%> :</div> <div> <%=message.message%> </div>
             </div>
             <div class="message">
-              <div class="green"> date: </div> <div> <%=message.date%> </div>
+              <div class="color"> date: </div> <div> <%=message.date%> </div>
             </div>
           </li>
         <% } else { %>
-          <li class="messageContainer">
+          <li class="message-Container">
             <div class="message">
-              <div class="green"> System: </div> <div> <%=message.message%> </div>
+              <div class="color"> System: </div> <div> <%=message.message%> </div>
             </div>
             <div class="message">
-              <div class="brown"> To: <%=message.email%> </div>
+              <div class="color-message"> To: <%=message.email%> </div>
             </div>
             <div class="message">
-              <div class="green"> date: </div> <div> <%=message.date%> </div>
+              <div class="color"> date: </div> <div> <%=message.date%> </div>
             </div>
           </li>
         <% } %>
       <% }) %>
       
       <div class="links">
-        <a href="/chat"> Ir a todos los mensjaes</a>
+        <a href="/chat"> Ir a todos los mensajess</a>
       </div>
   
     </ul>

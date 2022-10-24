@@ -12,29 +12,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 30px;
   }
   
-  .formInput{
+  .form-Input{
     width: 30%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
   }
-  
-  .btnSubmit{
-    color: black;
-    margin-top: 10px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    background-color: blue;
-  }
-  
   
   a{
     text-decoration: none;
-    color: white;
-    background-color: blueviolet;
+    color: black;
+    background-color: rgb(166, 151, 180);
     padding: 10px;
     border-radius: 10px;
   }
@@ -45,14 +36,21 @@ body{
     margin: 48px 0px;
   }
   
-  .productsContainer{
+  .color{
+    color: green;
+  }
+  
+  .color-message{
+    color: red;
+  }
+
+  .products-Container{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .productContainer{
+  .product-Container{
     display: flex;
     width: 70%;
     justify-content: space-between;
@@ -61,42 +59,35 @@ body{
     border-top: 1px solid white;
   }
   
-  .navBar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
   .options{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  #messagesContainer{
+  #messages-Container{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .messageContainer{
+  .message-Container{
     width: 70%;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 40px;
     border-top: 1px white solid;
     align-items: center;
   }
   
-  .green{
-    color: green;
+
+  .btn-Submit{
+    color: white;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: blue;
   }
-  
-  .brown{
-    color: brown;
-  }
-  
- 
   
   .btnAddProduct{
     color: white;

@@ -9,22 +9,22 @@
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="navBar">
+    <div>
       <h1>Bienvenido <%=name%></h1>
-      <a href="/logout"> Logout </a>
+      <a href="/logout"> Salir </a>
     </div>
   <% if (products) { %>
     <div class="container">
-      <h2 class="my-5 py-5">LISTA DE PRODUCTOS</h2>
-      <div class="productsContainer">
-        <div class="productContainer">
+      <h2 class="my-4 py-4">LISTA DE PRODUCTOS</h2>
+      <div class="products-Container">
+        <div class="product-Container">
           <div>Nombre productp</div>
           <div>Precio</div>
           <div>Imagen</div>
           <div>cantidad</div>
         </div>
         <% for(let i = 0; i < products.length; i++) { %>
-          <div class="productContainer">
+          <div class="product-Container">
             <div><%=products[i].title %></div>
             <div><%=products[i].price %></div>
             <div><img src="<%=products[i].thumbnail %>" alt="<%=products[i].title %>" height="150" width="200"></div>
@@ -44,27 +44,27 @@
   <% if (admin === true){ %> 
     <h2>Formulario para agregar un Producto</h2>
     <form action="/products" method="post">
-      <div class="formInput">
+      <div class="form-Input">
         <label for="title"> Titulo </label>
         <input type="text" id="title" name="title">
       </div>
-      <div class="formInput">
+      <div class="form-Input">
         <label for="price"> Precio</label>
         <input type="number" id="price" name="price">
       </div>
-      <div class="formInput">
+      <div class="form-Input">
         <label for="description"> Descripcion </label>
         <input type="text" id="description" name="description">
       </div>
-      <div class="formInput">
+      <div class="form-Input">
         <label for="category"> Caategoria</label>
         <input type="text" id="category" name="category">
       </div>
-      <div class="formInput">
+      <div class="form-Input">
         <label for="thumbnail"> Imagen </label>
         <input type="text" id="thumbnail" name="thumbnail">
       </div>
-      <button type="submit" class="btnSubmit"> Enviar</button>
+      <button type="submit" class="btn-Submit"> Enviar</button>
     </form>
     <% } %>
     <div class="links">
